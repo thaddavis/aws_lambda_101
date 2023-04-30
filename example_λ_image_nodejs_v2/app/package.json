@@ -1,0 +1,19 @@
+{
+  "name": "example_λ_image_nodejs_v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "nodemon --watch '**/*' -e js --exec ./build.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^6.6.6",
+    "get-stream": "^6.0.1",
+    "nodemon": "^2.0.22",
+    "pdfkit": "^0.13.0"
+  }
+}

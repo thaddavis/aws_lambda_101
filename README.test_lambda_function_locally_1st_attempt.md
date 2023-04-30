@@ -27,7 +27,7 @@ aws lambda create-function \
   --code ImageUri=333427308013.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest \
   --role arn:aws:iam::333427308013:role/lambda-ex
 ```
-- Went on a detour of attaching all needed IAM permission to the AWS-CLI account and the execution role that the lambda will use
+- Went on a detour of attaching all needed IAM permissions to the AWS-CLI account and the execution role that the lambda will use
     - create all the needed inline policies for the aws_lambda_101 account
     - create the `ecr_GetSetRepositoryPolicy` to the aws_lambda_101 account - this is for allowing the `aws_lambda_101` account to set the needed resource-based policy on your ECR registry in your account ie: set the service principal on the ECR to be accessed by lambda.amazonaws.com
     - alternatively you could use the following for the previous step...
