@@ -1,0 +1,14 @@
+{
+    "Version" : "2008-10-17",
+    "Statement" : [
+        {
+            "Sid" : "allow Lambda pull",
+            "Effect" : "Allow",
+            "Principal" : "lambda.amazonaws.com",
+            "Action" : [
+                "ecr:BatchGetImage",
+                "ecr:GetDownloadUrlForLayer"
+            ]
+        }
+    ]
+}

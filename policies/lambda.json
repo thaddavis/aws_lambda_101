@@ -1,0 +1,37 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:ListFunctions",
+                "lambda:ListEventSourceMappings",
+                "lambda:ListLayerVersions",
+                "lambda:ListLayers",
+                "lambda:CreateEventSourceMapping",
+                "lambda:CreateFunction",
+                "lambda:AddPermission",
+                "lambda:CreateAlias",
+                "lambda:CreateFunctionUrlConfig",
+                "lambda:DeleteFunction",
+                "lambda:UpdateEventSourceMapping",
+                "lambda:UpdateFunctionCode",
+                "lambda:UpdateFunctionConfiguration",
+                "lambda:UpdateFunctionEventInvokeConfig",
+                "lambda:UpdateFunctionUrlConfig",
+                "lambda:PutFunctionConcurrency",
+                "lambda:PublishLayerVersion",
+                "lambda:PublishVersion",
+                "lambda:InvokeFunction",
+                "lambda:InvokeAsync",
+                "lambda:DeleteEventSourceMapping",
+                "lambda:DeleteFunction",
+                "lambda:DeleteFunctionConcurrency",
+                "lambda:DeleteFunctionEventInvokeConfig",
+                "lambda:DeleteFunctionUrlConfig"
+            ],
+            "Resource": "arn:aws:lambda:us-east-1:333427308013:function:*"
+        }
+    ]
+}
