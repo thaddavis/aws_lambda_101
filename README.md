@@ -17,7 +17,6 @@
     Deploy Container Images
     https://docs.aws.amazon.com/lambda/latest/dg/nodejs-image.html
 
-
 - Show how to create a layer
     - https://docs.aws.amazon.com/lambda/latest/dg/invocation-layers.html
 
