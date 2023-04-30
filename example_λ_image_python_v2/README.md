@@ -10,7 +10,7 @@ LAMBDA_TASK_ROOT=/var/task
 ```
 cd app
 docker build -t hello-world-v2 .
-docker run -p 9000:8080 -v ${PWD}:/var/task hello-world-v2
+docker run -p 9000:8080 hello-world-v2
 curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d @test_event_payloads/1.json
 ```
 
