@@ -1,0 +1,19 @@
+---
+version: "3"
+
+services:
+  lambda_func:
+    build: .
+    volumes:
+      - node_modules:/var/task/node_modules
+    ports:
+      - 8080:9000
+    command: /var/task/copy_node_modules.sh
+
+volumes:
+  node_modules:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./node_modules
