@@ -1,0 +1,19 @@
+---
+version: "3"
+
+services:
+  lambda_func:
+    build: .
+    volumes:
+      - package:/var/task/package
+    ports:
+      - 8080:9000
+    command: /var/task/copy_python_packages.sh
+
+volumes:
+  package:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./package
