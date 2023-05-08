@@ -9,6 +9,7 @@
                 "lambda:ListEventSourceMappings",
                 "lambda:ListLayerVersions",
                 "lambda:ListLayers",
+                "lambda:GetLayerVersion",
                 "lambda:CreateEventSourceMapping",
                 "lambda:CreateFunction",
                 "lambda:AddPermission",
